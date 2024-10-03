@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Med center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header section with logo and navigation links -->
+<header>
+    <img src="images/logo.svg" alt="Logo">
+    <div class="navigationBar">
+        <!-- Navigation Links -->
+        <a href="">Головна</a>
+        <a href="">Про нас</a>
+        <a href="">Контакти</a>
+    </div>
+</header>
+
+<!-- Introduction section with text and image about the medical center -->
+<div class="introductionContainer">
+    <div class="introductionText">
+        <!-- Main title and introductory text -->
+        <h1>Med center</h1>
+        <h3>Changing Lives, Right Here</h3>
+        <p>
+            Med Center Health offers more access to innovative
+            healthcare. More locations. More lives made better.
+            Right here.
+        </p>
+        <!-- Read more button -->
+        <button>Read more</button>
+    </div>
+    <div class="introductionImage">
+        <!-- Introduction Image (doctor) -->
+        <img src="images/doctor.jpg" alt="doctor">
+    </div>
+</div>
+
+<!-- Section for Medical Services offered by the center -->
+<div class="medicalServicesContainer">
+    <div class="medicalServicesText">
+        <!-- Medical Services heading and description -->
+        <h2>Medical Services</h2>
+        <h3>Our Center offers you and your family the complete range of healthcare services.</h3>
+    </div>
+    <div class="cardsServices">
+        <!-- Individual service card - Family Care -->
+        <div>
+            <img src="images/familyCare.svg" alt="">
+            <h3>Family care</h3>
+            <p>
+                Our doctors, nurses, and clinic staff work together to provide friendly, personalized care to all
+                members of your family, from birth to age 100+.
+            </p>
+        </div>
+        <!-- Individual service card - Urgent Care -->
+        <div>
+            <img src="images/urgentCare.svg" alt="">
+            <h3>Urgent Care</h3>
+            <p>
+                From walk-in care, same-day appointments to online visits with OnCare, we’ll take good care of you. If
+                you are experiencing an emergency.
+            </p>
+        </div>
+        <!-- Individual service card - Pediatric -->
+        <div>
+            <img src="images/pediatric.svg" alt="">
+            <h3>Pediatric</h3>
+            <p>
+                Our care team has earned a reputation for providing expert care to kids, including treating many complex
+                conditions.
+            </p>
+        </div>
+        <!-- Individual service card - Lab Services -->
+        <div>
+            <img src="images/lab.svg" alt="">
+            <h3>Lab Services</h3>
+            <p>
+                We can help you know what to expect before, during and after your test. Always follow the directions
+                your physician’s office gives.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Appointment Booking Form section -->
+<div class="formContainer">
+    <div class="formText">
+        <!-- Booking form title and description -->
+        <h2>Book an Appointment</h2>
+        <p>Fill out the form below to schedule an appointment with our medical professionals. We'll get back to you as
+            soon as possible to confirm your appointment details.</p>
+    </div>
+
+    <!-- Appointment form -->
+    <form>
+        <!-- Input field for patient's full name -->
+        <div class="formGroup">
+            <label for="patientName">Patient's Full Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+        </div>
+
+        <!-- Input field for email address -->
+        <div class="formGroup">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Input field for phone number -->
+        <div class="formGroup">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <!-- Input field for selecting preferred appointment date -->
+        <div class="formGroup">
+            <label for="appointmentDate">Preferred Appointment Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+        </div>
+
+        <!-- Dropdown menu for selecting department -->
+        <div class="formGroup">
+            <label for="department">Select Department:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Please Choose --</option>
+                <option value="general">General Medicine</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="cardiology">Cardiology</option>
+            </select>
+        </div>
+
+        <!-- Textarea for additional information (optional) -->
+        <div class="formGroup">
+            <label for="message">Additional Information (Optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <!-- Submit button for the form -->
+        <div class="formGroup">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+<!-- Footer section with social media links -->
+<footer>
+    <h3>We’re on social media</h3>
+    <div class="footerIconsContainer">
+        <!-- Social media icons -->
+        <img src="images/telegram.svg" alt="telegram">
+        <img src="images/instagram.svg" alt="instagram">
+        <img src="images/viber.svg" alt="viber">
+    </div>
+</footer>
+
+</body>
+</html>

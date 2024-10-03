@@ -1,0 +1,245 @@
+body {
+    font-family: "Afacad Flux", sans-serif;
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img {
+    max-width: 40px;
+    height: auto;
+    margin: 0 20px 0 40px;
+}
+
+.navigationBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 22px 0;
+    margin-right: 50px;
+}
+
+.navigationBar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navigationBar a:hover {
+    color: #007BFF;
+}
+
+.navigationBar a:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+.introductionContainer {
+    display: flex;
+    max-height: 689px;
+    justify-content: space-between;
+    background: skyblue;
+}
+
+.introductionText {
+    padding-top: 35px;
+}
+
+.introductionText h1 {
+    margin-bottom: -40px;
+    margin-left: 68px;
+    color: white;
+    font-size: 160px;
+}
+
+.introductionText h3 {
+    margin-left: 68px;
+    text-align: left;
+    color: white;
+    font-size: 40px;
+}
+
+.introductionText p {
+    margin-left: 68px;
+    text-align: left;
+    color: white;
+    font-size: 27px;
+}
+
+.introductionText button {
+    margin-left: 68px;
+    margin-top: 10px;
+    background-color: #d9ebec;
+    color: #000;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.introductionText button:hover {
+    background-color: #b1d4d5;
+    transform: scale(1.05);
+}
+
+.medicalServicesContainer {
+    max-height: 663px;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.medicalServicesText {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.medicalServicesText h2 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.medicalServicesText h3 {
+    margin-top: -20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cardsServices {
+    display: flex;
+    margin-top: 100px;
+    gap: 10px;
+}
+
+
+.cardsServices > div {
+    border: 2px solid powderblue;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.cardsServices > div:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.cardsServices > div h3 {
+    font-size: 40px;
+    color: powderblue;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cardsServices > div p {
+    font-size: 19px;
+    text-align: center;
+}
+
+.formContainer {
+    width: 100%;
+    display: flex;
+    gap: 140px;
+    margin-top: 150px;
+    padding: 100px;
+    background-image: url("images/medicineBackground.jpg");
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formText h2 {
+    margin-bottom: 40px;
+    padding-top: 150px;
+    font-size: 70px;
+    color: white;
+}
+
+.formText p {
+    font-size: 30px;
+    color: white;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formText {
+    width: 50%;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formGroup button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.formGroup button:hover {
+    background-color: #b1d4d5;
+    transform: scale(1.05);
+}
+
+footer {
+    height: 100px;
+    background-color: #151313;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 150px;
+    padding: 20px 30px 0;
+}
+
+footer h3 {
+    margin-top: 2px;
+}
+
+.footerIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
