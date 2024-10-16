@@ -11,7 +11,7 @@
 <body>
 
 <!-- Header section with logo and navigation links -->
-<header>
+<header id = "header">
     <img src="images/logo.svg" alt="Logo">
     <div class="navigationBar">
         <!-- Navigation Links -->
@@ -159,5 +159,18 @@
     </div>
 </footer>
 
+<script>
+    // This script listens for the scroll event on the window
+    window.addEventListener("scroll", function() {
+        var header = document.getElementById("header");
+        if (window.scrollY > 20) {
+            header.classList.add("shrink", "shadow");
+            header.style.backgroundColor = "#6699CC";
+        } else {
+            header.classList.remove("shrink", "shadow");
+            header.style.backgroundColor = "transparent";
+        }
+    });
+</script>
 </body>
 </html>
