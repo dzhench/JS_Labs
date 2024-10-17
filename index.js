@@ -1,11 +1,11 @@
 // This script listens for the scroll event on the window
+let headerEl = document.getElementById("header")
+
 window.addEventListener("scroll", function() {
-    var header = document.getElementById("header");
-    if (window.scrollY > 20) {
-        header.classList.add("shrink", "shadow");
-        header.style.backgroundColor = "#6699CC";
+    const scrollPos = window.scrollY
+    if (scrollPos > 1) {
+        headerEl.classList.add("fixed")
     } else {
-        header.classList.remove("shrink", "shadow");
-        header.style.backgroundColor = "transparent";
+        headerEl.classList.remove("fixed")
     }
-});
+})

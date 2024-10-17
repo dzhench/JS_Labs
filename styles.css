@@ -3,7 +3,6 @@ body {
 }
 
 header {
-    position: sticky; /* Makes the header stick to the top of the viewport */
     top: 0; /* Sticks the header at the very top */
     width: 100%;
     background-color: #fff;
@@ -13,20 +12,16 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.fixed {
+    background: #add8e6;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
     transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-header.shrink {
-    padding: 10px 0; /* Reduces the padding to create a more compact header */
-    height: 40px;
-    font-size: 90%;
-    transition: all 0.2s ease;
-}
-
-
-header.shadow {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow effect under the header */
 }
 
 header img {
