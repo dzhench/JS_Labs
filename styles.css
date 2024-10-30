@@ -2,15 +2,138 @@ body {
     font-family: "Afacad Flux", sans-serif;
 }
 
+/* Styles for header */
 header {
     width: 100%;
-    background-color: #fff;
-    color: #333;
-    text-align: center;
+    background-color: #007BFF; /* Header background color */
+    color: #ffffff; /* Text color */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+header img {
+    max-width: 150px; /* Max width for the logo */
+    height: auto;
+}
+
+/* Burger menu button */
+.menu-button {
+    display: none; /* Hide burger button by default */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    color: #ffffff; /* Text color */
+    font-size: 30px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.menu-button:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Navigation bar */
+.navigationBar {
+    display: flex; /* Align in row */
+    gap: 20px; /* Space between elements */
+}
+
+/* Styles for navigation links */
+.navigationBar a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Text color */
+    font-size: 18px; /* Font size */
+    font-weight: 500; /* Semi-bold text */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navigationBar a:hover {
+    color: #ffd700; /* Color on hover */
+}
+
+/* Styles for hidden menu */
+#hidden-menu {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -400px; /* Positioned offscreen */
+    height: 100vh;
+    background: #ffffff; /* Menu background color */
+    z-index: 10;
+    text-align: center;
+    padding: 20px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3); /* Shadow */
+    transition: right 0.3s ease; /* Smooth transition */
+}
+
+/* Show menu */
+#hidden-menu.show {
+    right: 0; /* Show menu */
+}
+
+/* Close menu */
+.close {
+    font-size: 30px; /* Font size for close button */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #333; /* Text color */
+    position: absolute; /* Position button */
+    top: 20px; /* Top margin */
+    right: 20px; /* Right margin */
+}
+
+/* Title in hidden menu */
+#hidden-menu h2 {
+    color: #007BFF; /* Title color */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Styles for list in hidden menu */
+#hidden-menu ul {
+    list-style: none; /* Remove list markers */
+    padding: 0; /* Remove padding */
+}
+
+#hidden-menu li {
+    margin: 10px 0; /* Space between list items */
+}
+
+/* Styles for links in hidden menu */
+#hidden-menu a {
+    text-decoration: none; /* Remove underline */
+    color: #007BFF; /* Text color */
+    font-size: 20px; /* Font size */
+}
+
+#hidden-menu a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Media query to show burger menu button only on mobile devices */
+@media (max-width: 992px) {
+    .menu-button {
+        display: block; /* Show button on mobile */
+    }
+
+    .navigationBar {
+        display: none; /* Hide navigation on mobile */
+    }
+}
+
+
+/* Styles for the scroll-to-top button */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hidden by default */
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .fixed {

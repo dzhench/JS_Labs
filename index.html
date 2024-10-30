@@ -10,16 +10,25 @@
 </head>
 <body>
 
-<!-- Header section with logo and navigation links -->
-<header id = "header">
+<header id="header">
     <img src="images/logo.svg" alt="Logo">
-    <div class="navigationBar">
-        <!-- Navigation Links -->
-        <a href="">Головна</a>
-        <a href="">Про нас</a>
-        <a href="">Контакти</a>
-    </div>
+    <button id="show-menu" class="menu-button">☰</button> <!-- Кнопка бургер-меню -->
+    <nav class="navigationBar">
+        <a href="#home">Головна</a>
+        <a href="#about">Про компанію</a>
+        <a href="#services">Послуги</a>
+    </nav>
 </header>
+
+<div id="hidden-menu">
+    <span class="close">×</span>
+    <h2>Меню</h2>
+    <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Про компанію</a></li>
+        <li><a href="#">Послуги</a></li>
+    </ul>
+</div>
 
 <!-- Introduction section with text and image about the medical center -->
 <div class="introductionContainer">
@@ -147,6 +156,9 @@
         </div>
     </form>
 </div>
+
+<!-- Scroll to Top Button -->
+<button id="scroll-to-top" style="display: none;">↑</button>
 
 <!-- Footer section with social media links -->
 <footer>
